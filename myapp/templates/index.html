@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Project</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    {% if content %}
+        <h1>{{ content.title }}</h1>
+        <img src="{{ content.image.url }}" alt="Image">
+        <p>{{ content.description }}</p>
+    {% else %}
+        <h2>No content added yet</h2>
+    {% endif %}
+</div>
+
+</body>
+</html>
